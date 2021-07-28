@@ -59,7 +59,7 @@ export class HousesController extends BaseController {
 
   /**
 * *.put('/:id', this.edit)
-* Update an house 
+* Update an house
 * @param {import("express").Request} req
 * @param {import("express").Response} res
 * @param {import("express").NextFunction} next
@@ -67,14 +67,13 @@ export class HousesController extends BaseController {
   async updatehouse(req, res, next) {
     try {
       const house = await housesService.updatehouse(req.body)
-    }
-    catch (error) {
+    } catch (error) {
       next(error)
     }
   }
-  */
+
   /**  .delete('/:id', this.destroy)
-* Delete a house 
+* Delete a house
 * @param {import("express").Request} req
 * @param {import("express").Response} res
 * @param {import("express").NextFunction} next
